@@ -43,8 +43,65 @@
 <main>
 
     <!-- HERO -->
-    <section class="hero" id="home">
+  
+<section class="hero" id="home">
 
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content">
+
+        <div class="hero-badge">
+            ★ HOUSTON'S PREMIUM BARBERSHOP
+        </div>
+
+        <p class="hero-small">
+            PRECISION • STYLE • CONFIDENCE
+        </p>
+
+        <h1>
+            YOUR STYLE.<br>
+            <span>OUR CRAFT.</span>
+        </h1>
+
+        <p class="hero-text">
+            Premium haircuts, precision fades and professional
+            grooming for men who want to look their best.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#booking" class="btn btn-primary">
+                Book Your Cut
+            </a>
+
+            <a href="#gallery" class="btn btn-secondary">
+                View Our Work
+            </a>
+
+        </div>
+
+        <div class="hero-stats">
+
+            <div>
+                <strong>10+</strong>
+                <span>Years Experience</span>
+            </div>
+
+            <div>
+                <strong>5K+</strong>
+                <span>Happy Clients</span>
+            </div>
+
+            <div>
+                <strong>5.0</strong>
+                <span>Client Rating</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
         <div class="container hero-content">
 
             <p class="hero-small">
@@ -75,7 +132,7 @@
 
         </div>
 
-    </section>
+    </>
 
 
     <!-- SERVICES -->
@@ -382,9 +439,201 @@
     </section>
 
 
-    <!-- BOOKING -->
-    <section class="booking section" id="booking">
+  
+<!-- BOOKING -->
+<section class="booking section" id="booking">
 
+    <div class="container">
+
+        <div class="section-heading">
+
+            <p class="section-label">
+                BOOK YOUR APPOINTMENT
+            </p>
+
+            <h2>
+                RESERVE YOUR<br>
+                <span>SPOT.</span>
+            </h2>
+
+            <p>
+                Choose your service and preferred appointment time.
+                We'll confirm your booking request.
+            </p>
+
+        </div>
+
+
+        <form
+            name="booking"
+            method="POST"
+            data-netlify="true"
+            class="booking-form"
+        >
+
+            <input type="hidden" name="form-name" value="booking">
+
+
+            <div class="form-row">
+
+                <div class="form-group">
+
+                    <label for="name">
+                        Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Your full name"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="phone">
+                        Phone Number
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="Your phone number"
+                        required
+                    >
+
+                </div>
+
+            </div>
+
+
+            <div class="form-row">
+
+                <div class="form-group">
+
+                    <label for="service">
+                        Select Service
+                    </label>
+
+                    <select
+                        id="service"
+                        name="service"
+                        required
+                    >
+
+                        <option value="">
+                            Choose a service
+                        </option>
+
+                        <option value="Classic Haircut">
+                            Classic Haircut — $30
+                        </option>
+
+                        <option value="Signature Fade">
+                            Signature Fade — $35
+                        </option>
+
+                        <option value="Beard Trim">
+                            Beard Trim — $20
+                        </option>
+
+                        <option value="Cut + Beard">
+                            Cut + Beard — $50
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="date">
+                        Preferred Date
+                    </label>
+
+                    <input
+                        type="date"
+                        id="date"
+                        name="date"
+                        required
+                    >
+
+                </div>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="time">
+                    Preferred Time
+                </label>
+
+                <select
+                    id="time"
+                    name="time"
+                    required
+                >
+
+                    <option value="">
+                        Choose a time
+                    </option>
+
+                    <option>9:00 AM</option>
+                    <option>10:00 AM</option>
+                    <option>11:00 AM</option>
+                    <option>12:00 PM</option>
+                    <option>1:00 PM</option>
+                    <option>2:00 PM</option>
+                    <option>3:00 PM</option>
+                    <option>4:00 PM</option>
+                    <option>5:00 PM</option>
+                    <option>6:00 PM</option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="message">
+                    Additional Notes
+                </label>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="Anything we should know?"
+                ></textarea>
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="btn btn-primary booking-submit"
+            >
+                Request Appointment
+            </button>
+
+
+            <p class="booking-note">
+                We'll contact you to confirm your appointment.
+            </p>
+
+        </form>
+
+    </div>
+
+</section>
         <div class="container booking-content">
 
             <p class="section-label">
@@ -407,7 +656,7 @@
 
         </div>
 
-    </section>
+    </>
 
 
     <!-- CONTACT -->
@@ -428,10 +677,33 @@
 
             </div>
 
+<div class="contact-buttons">
 
+    <a
+        href="tel:+2348073976241"
+        class="btn btn-primary"
+    >
+        📞 Call Us
+    </a>
+
+    <a
+        href="sms:+2348073976241"
+        class="btn btn-secondary"
+    >
+        💬 Text Us
+    </a>
+
+</div>
             <div class="contact-details">
 
                 <div>
+                  <a
+    href="https://www.google.com/maps/search/?api=1&query=1250+Main+Street+Houston+TX+77002"
+    target="_blank"
+    class="map-link"
+>
+    📍 Get Directions →
+                  </a>
                     <h3>📍 Location</h3>
                     <p>
                         1250 Main Street<br>
@@ -449,11 +721,19 @@
                 </div>
 
                 <div>
-                    <h3>📞 Contact</h3>
-                    <p>
-                        (713) 555-0184<br>
-                        hello@apexcutsdemo.com
-                    </p>
+                  <h3>📞 Contact</h3>
+
+<p>
+    <a href="tel:+2348073976241">
+        2348073976241
+    </a>
+    <br>
+
+    <a href="mailto:chinedudan739@gmail.com">
+        hello@chinedudan739@gmail.com
+    </a>
+</p>
+          
                 </div>
 
             </div>
